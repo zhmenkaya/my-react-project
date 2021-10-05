@@ -1,9 +1,10 @@
 import './App.css';
+import Headliner from './components/headliner/Headliner';
 
 function App() {
   return (
     <div className="App">
-      hello
+      <Headliner/>
     </div>
   );
 }
