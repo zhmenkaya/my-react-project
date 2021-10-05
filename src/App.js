@@ -1,10 +1,10 @@
 import './App.css';
-import Headliner from './components/headliner/Headliner';
+import Headline from './components/headline/Headline';
 
 function App() {
   return (
     <div className="App">
-      <Headliner/>
+      <Headline/>
     </div>
   );
 }
