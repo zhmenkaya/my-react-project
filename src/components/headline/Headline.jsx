@@ -1,15 +1,14 @@
 import './Headline.css';
-import thumbnail from "./../../assets/img/image1.jpg";
 import likeIcon from "./../../assets/img/like-icon.svg";
 import dislikeIcon from "./../../assets/img/dislike-icon.svg";
 import clockIcon from "./../../assets/img/clock.svg";
 
-function Headline() {
+function Headline(props) {
 return (
     <article className="headline">
-        <img className="thumbnail-img" src={thumbnail} alt="" />
+        <img className="thumbnail-img" src={props.thumbnail} alt="" />
         <div className="info">
-            <h1 className="title">Hate speech vs free speech</h1>
+            <h1 className="title">{props.title}</h1>
             <div className="rating">
                 <div className="like">
                     <img className="like-icon" src={likeIcon} alt="" />
@@ -21,7 +20,7 @@ return (
                     </div>
             </div>
             <div className="wrapper">
-                <span className="label">BBC NEWS</span>
+                <span style={props.style} className="label">{props.label}</span>
                 <div className="time">
                     <img  className="time-icon" src={clockIcon} alt="" />
                     <span className="time-text">2:00 pm</span>
