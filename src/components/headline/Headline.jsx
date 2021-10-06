@@ -1,14 +1,17 @@
 import s from './Headline.module.css';
 import likeIcon from "./../../assets/img/like-icon.svg";
 import dislikeIcon from "./../../assets/img/dislike-icon.svg";
-import clockIcon from "./../../assets/img/clock.svg";
+import Time from '../time/Time';
+import Label from '../label/Label';
+import ArticleHeader from '../article-header/ArticleHeader';
+
 
 function Headline(props) {
 return (
     <article className={s.headline}>
         <img className={s.thumbnailImg} src={props.thumbnail} alt="" />
         <div className={s.info}>
-            <h1 className={s.title}>{props.title}</h1>
+            <ArticleHeader title={props.title}/>
             <div className={s.rating}>
                 <div className={s.like}>
                     <img className={s.likeIcon} src={likeIcon} alt="" />
@@ -20,11 +23,8 @@ return (
                     </div>
             </div>
             <div className={s.wrapper}>
-                <span style={props.style} className={s.label}>{props.label}</span>
-                <div className={s.time}>
-                    <img  className={s.timeIcon} src={clockIcon} alt="" />
-                    <span className={s.timeText}>2:00 pm</span>
-                </div>
+                <Label style={props.style} label={props.label}/>
+                <Time/>
             </div>
         </div>
     </article>
