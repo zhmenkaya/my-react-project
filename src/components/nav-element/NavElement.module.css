@@ -1,0 +1,17 @@
+.navElement{
+    padding: 40px 0 0 32px;
+}
+
+.navIcon{
+    margin-right: 12px;
+    vertical-align: middle;
+}
+
+.navName{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150%;
+    color: #182135;
+    margin-right: 42px;
+    vertical-align: middle;
+}

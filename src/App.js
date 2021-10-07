@@ -29,11 +29,13 @@ function App() {
 
         <header className="header">
           <nav className="nav">
-            <NavElement navIcon={icon7}/>
-            <NavElement navIcon={icon8}/>
-            <NavElement navIcon={icon9}/>
+            <NavElement navIcon={icon7} navName="San Francisco, California"/>
+            <NavElement navIcon={icon8} navName="Analysis"/>
+            <NavElement navIcon={icon9} navName="Monthly"/>
           </nav>
-          <form></form>
+          <form>
+            <input className="formSearch" type="search" name="q" placeholder="Search for anything…"/>
+          </form>
         </header>
 
         <aside className="sidebar">aside</aside>

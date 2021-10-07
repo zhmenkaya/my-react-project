@@ -19,8 +19,29 @@
 
 .header{
     grid-area: h;
+    display: flex;
 }
 
+.nav{
+    display: flex;
+    align-items: baseline;
+}
+
+.formSearch{
+    height: 48px;
+    background: #F7F7F7;
+    border-radius: 10px;
+    border: none;
+    min-width: 385px;
+    margin-top: 30px;
+}
+.formSearch::placeholder{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #626264;
+    padding-left: 48px;
+}
 .sidebar{
     grid-area: s;
     background-color:#F8F8F8;
