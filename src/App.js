@@ -23,6 +23,7 @@ import icon8 from './assets/img/navIcon2.png';
 import icon9 from './assets/img/navIcon3.png';
 import icon10 from './assets/img/iconFill.png';
 import avatar from './assets/img/avatar.png';
+import logo from './assets/img/dailyLogo.png';
 
 function App() {
   return (
@@ -42,10 +43,12 @@ function App() {
             <img className="iconFill" src={icon10} alt=""/>
             <img className="photoAvatar" src={avatar} alt=""/>
           </div>
-          
         </header>
 
-        <aside className="sidebar">aside</aside>
+        <aside className="sidebar">
+          <img className="dailyLogo" src={logo} alt=""/>
+        </aside>
+
         <main className="main">
 
           <section className="channels">
