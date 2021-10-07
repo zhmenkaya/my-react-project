@@ -1,0 +1,23 @@
+.new{
+    display: flex;
+    flex-direction: column;
+}
+
+.thumbnailImg{
+    border-radius: 12px;
+}
+
+.title{
+    display: block;
+    max-width: 224px;
+}
+
+.info{
+    display: flex;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    width: ;
+}
