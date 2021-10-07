@@ -8,7 +8,7 @@ function New (props) {
       <article className={s.new}>
         <img className={s.thumbnailImg} src={props.thumbnail} alt="" />
         <div className={s.info}>
-            <ArticleHeader style={props.titleStyle} title={props.title}/>
+            <ArticleHeader title={props.title}/>
             <div className={s.wrapper}>
                 <Label style={props.style} label={props.label}/>
                 <Time/>

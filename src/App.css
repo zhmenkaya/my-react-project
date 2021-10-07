@@ -30,6 +30,12 @@
     grid-area: c;
     padding: 32px;
 }
+
+.channel-block{
+    display: flex;
+    justify-content: space-between;
+}
+
 .block-content{
     display: grid;
     grid-template-columns: repeat(3, 336px);
