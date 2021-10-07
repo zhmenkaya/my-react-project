@@ -35,13 +35,14 @@ function App() {
             <NavElement navIcon={icon8} navName="Analysis"/>
             <NavElement navIcon={icon9} navName="Monthly"/>
           </nav>
-          <form>
-            <input className="formSearch" type="search" name="q" placeholder="Search for anything…"/>
-          </form>
+          <div className="right-block">
+            <form>
+              <input className="formSearch" type="search" name="q" placeholder="Search for anything…"/>
+            </form>
+            <img className="iconFill" src={icon10} alt=""/>
+            <img className="photoAvatar" src={avatar} alt=""/>
+          </div>
           
-          <img className="iconFill" src={icon10} alt=""/>
-          <img className="photoAvatar" src={avatar} alt=""/>
-
         </header>
 
         <aside className="sidebar">aside</aside>

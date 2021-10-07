@@ -11,7 +11,7 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: 304px 1fr;
-    grid-template-rows: 100px 1fr;
+    grid-template-rows: 67px 1fr;
     grid-template-areas: 
     "s h"
     "s c";
@@ -20,11 +20,18 @@
 .header{
     grid-area: h;
     display: flex;
+    justify-content: space-between;
 }
 
 .nav{
     display: flex;
     align-items: baseline;
+}
+
+.right-block{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 32px;
 }
 
 .formSearch{
@@ -33,7 +40,7 @@
     border-radius: 10px;
     border: none;
     min-width: 385px;
-    margin-top: 30px;
+    margin: 30px 16px 0 0;
     position: relative;
 }
 
@@ -54,7 +61,7 @@
 .iconFill{
     width: 48px;
     height: 48px;
-    margin-top: 32px;
+    margin: 32px 16px 0 0;
 }
 
 .photoAvatar{
