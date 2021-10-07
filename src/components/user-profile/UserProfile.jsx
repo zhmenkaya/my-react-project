@@ -1,4 +1,4 @@
-import s from "./UserProfile.module.scc"
+import s from "./UserProfile.module.css"
 
 function UserProfile (props) {
     return (

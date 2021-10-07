@@ -24,6 +24,15 @@ import icon9 from './assets/img/navIcon3.png';
 import icon10 from './assets/img/iconFill.png';
 import avatar from './assets/img/avatar.png';
 import logo from './assets/img/dailyLogo.png';
+import UserProfile from './components/user-profile/UserProfile';
+import profileIcon from './assets/img/profileIcon.png';
+import profileIcon2 from './assets/img/profileIcon2.png';
+import profileIcon3 from './assets/img/profileIcon3.png';
+import profileIcon4 from './assets/img/profileIcon4.png';
+import profileIcon5 from './assets/img/profileIcon5.png';
+import profileIcon6 from './assets/img/profileIcon6.png';
+import profileIcon7 from './assets/img/profileIcon7.png';
+
 
 function App() {
   return (
@@ -47,6 +56,16 @@ function App() {
 
         <aside className="sidebar">
           <img className="dailyLogo" src={logo} alt=""/>
+          <div className="profileItems">
+            <UserProfile itemIcon={profileIcon} itemName="Home"/>
+            <UserProfile itemIcon={profileIcon2} itemName="Explore"/>
+            <UserProfile itemIcon={profileIcon3} itemName="Saved"/>
+            <UserProfile itemIcon={profileIcon4} itemName="Subscriptions"/>
+            <UserProfile itemIcon={profileIcon5} itemName="Messages"/>
+            <UserProfile itemIcon={profileIcon6} itemName="Settings"/>
+            <UserProfile itemIcon={profileIcon7} itemName="Logout"/>
+
+          </div>
         </aside>
 
         <main className="main">

@@ -80,6 +80,10 @@
     background-color:#F8F8F8;
 }
 
+.dailyLogo{
+   margin: 33px 0 50px 59px;
+}
+
 .main{
     grid-area: c;
     padding: 32px;

@@ -1,0 +1,34 @@
+.userProfile{
+    margin: 0 32px 16px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+}
+
+.userProfile:hover{
+    background: #503E9D;
+    opacity: 0.3;
+    border-radius: 12px;
+}
+
+
+.userProfile:nth-child(6){
+    margin-bottom: 128px;
+}
+
+.itemIcon{
+    margin-right: 24px;
+    vertical-align: middle;
+}
+
+.itemName{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #878787;
+    vertical-align: middle;
+}
+.itemName:hover{
+    font-weight: bold;
+    color:#503E9D;
+}
