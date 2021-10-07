@@ -34,6 +34,14 @@
     border: none;
     min-width: 385px;
     margin-top: 30px;
+    position: relative;
+}
+
+.formSearch::after{
+    content:'./assets/img/searchIcon.png';
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 .formSearch::placeholder{
     font-weight: 400;
@@ -42,6 +50,24 @@
     color: #626264;
     padding-left: 48px;
 }
+
+.iconFill{
+    width: 48px;
+    height: 48px;
+    margin-top: 32px;
+}
+
+.photoAvatar{
+    width: 48px;
+    height: 48px;
+    margin-top: 32px;
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
+}
+
 .sidebar{
     grid-area: s;
     background-color:#F8F8F8;

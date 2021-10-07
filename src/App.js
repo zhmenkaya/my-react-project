@@ -21,6 +21,8 @@ import NavElement from './components/nav-element/NavElement';
 import icon7 from './assets/img/navIcon1.png';
 import icon8 from './assets/img/navIcon2.png';
 import icon9 from './assets/img/navIcon3.png';
+import icon10 from './assets/img/iconFill.png';
+import avatar from './assets/img/avatar.png';
 
 function App() {
   return (
@@ -36,6 +38,10 @@ function App() {
           <form>
             <input className="formSearch" type="search" name="q" placeholder="Search for anything…"/>
           </form>
+          
+          <img className="iconFill" src={icon10} alt=""/>
+          <img className="photoAvatar" src={avatar} alt=""/>
+
         </header>
 
         <aside className="sidebar">aside</aside>
