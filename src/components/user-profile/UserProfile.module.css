@@ -1,5 +1,5 @@
 .userProfile{
-    margin: 0 32px 16px;
+    margin: 0 32px 0px;
     height: 56px;
     display: flex;
     align-items: center;
@@ -13,7 +13,23 @@
 
 
 .userProfile:nth-child(6){
-    margin-bottom: 128px;
+    margin-bottom: 45px;
+}
+
+.userProfile:nth-child(7){
+    position: relative;
+}
+
+.userProfile:nth-child(7)::after{
+    content: "";
+    display: block;
+    width: 271px;
+    height: 2px;
+    background-color: #E8E8E8;
+    position: absolute;
+    bottom: -16px;
+    left: -15px;
+    
 }
 
 .itemIcon{

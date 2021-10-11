@@ -78,6 +78,7 @@
 .sidebar{
     grid-area: s;
     background-color:#F8F8F8;
+    /* position: relative; */
 }
 
 .dailyLogo{
