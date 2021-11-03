@@ -91,9 +91,66 @@
     overflow: hidden;
 }
 
-.dailyLogo{
-   margin: 33px 0 50px 59px;
+.logoWrap{
+    margin: 33px auto 29px;
+    max-width: 188px;
 }
+.dailyLogo{
+    width: 100%;
+}
+
+.profileBlock{}
+
+.profileList{
+    /* border:1px solid yellow; */
+    padding-left: 0;
+    max-width: 272px;
+    margin: 0 auto;
+
+}
+
+.profilePoint{
+    /* border:1px solid green; */
+    list-style-type: none;
+    background-color:transparent;
+    padding-left: 16px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+}
+
+.profilePoint:hover{
+    background-color: rgba(80, 62, 157, 0.1);
+    border: none;
+    border-radius:12px;
+    -webkit-border-radius:12px;
+    -moz-border-radius:12px;
+    -ms-border-radius:12px;
+    -o-border-radius:12px;
+}
+.profilePoint:nth-child(6){
+    margin-bottom: 92px;
+}
+
+.profilePoint:nth-child(7){
+    position: relative;
+}
+
+.profilePoint:nth-child(7)::after{
+    content: "";
+    display: block;
+    width: 271px;
+    height: 2px;
+    background-color: #E8E8E8;    
+    position: absolute;
+    bottom: -17px;
+    left: -2px;
+}
+
+.profileItemLink{
+    cursor: pointer;
+}
+
 
 .main{
     grid-area: c;

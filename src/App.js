@@ -25,7 +25,7 @@ import icon9 from './assets/img/navIcon3.png';
 import icon10 from './assets/img/iconFill.png';
 import avatar from './assets/img/avatar.png';
 import logo from './assets/img/dailyLogo.png';
-import UserProfile from './components/user-profile/UserProfile';
+import ProfileItem from './components/profile-item/ProfileItem';
 import profileIcon from './assets/img/profileIcon.png';
 import profileIcon2 from './assets/img/profileIcon2.png';
 import profileIcon3 from './assets/img/profileIcon3.png';
@@ -59,16 +59,49 @@ function App() {
         </header>
 
         <aside className="sidebar">
-          <img className="dailyLogo" src={logo} alt=""/>
-          <div className="profileItems">
-            <UserProfile itemIcon={profileIcon} itemName="Home"/>
-            <UserProfile itemIcon={profileIcon2} itemName="Explore"/>
-            <UserProfile itemIcon={profileIcon3} itemName="Saved"/>
-            <UserProfile itemIcon={profileIcon4} itemName="Subscriptions"/>
-            <UserProfile itemIcon={profileIcon5} itemName="Messages"/>
-            <UserProfile itemIcon={profileIcon6} itemName="Settings"/>
-            <UserProfile itemIcon={profileIcon7} itemName="Logout"/>
-
+          <div className="logoWrap">
+            <img className="dailyLogo" src={logo} alt=""/>
+          </div>
+         
+          <div className="profileBlock">
+            <ul className="profileList">
+              <li className="profilePoint">
+                <a className="profileItemLink">
+                  <ProfileItem itemIcon={profileIcon} itemName="Home"/>
+                </a>
+              </li>
+              <li className="profilePoint">
+                <a className="profileItemLink">
+                  <ProfileItem itemIcon={profileIcon2} itemName="Explore"/>
+                </a>
+              </li>
+              <li className="profilePoint">
+                <a className="profileItemLink">
+                  <ProfileItem itemIcon={profileIcon3} itemName="Saved"/>
+                </a>
+              </li>
+              <li className="profilePoint">
+                <a className="profileItemLink">
+                  <ProfileItem itemIcon={profileIcon4} itemName="Subscriptions"/>
+                </a>
+              </li>
+              <li className="profilePoint">
+                <a className="profileItemLink">
+                  <ProfileItem itemIcon={profileIcon5} itemName="Messages"/>
+                </a>
+              </li>
+              <li className="profilePoint">
+                <a className="profileItemLink">
+                  <ProfileItem itemIcon={profileIcon6} itemName="Settings"/>
+                </a>
+              </li>
+              <li className="profilePoint">
+                <a className="profileItemLink">
+                  <ProfileItem itemIcon={profileIcon7} itemName="Logout"/>
+                </a>
+              </li>
+            </ul>
+            
           </div>
         </aside>
 
@@ -105,7 +138,7 @@ function App() {
           <section className="newsBlock">
 
           <SectionTitle title="Featured News"/>
-          
+
             <div className="block-content">
               <New thumbnail={img7} title="Travellers to pay more than $2K, Trudeau says" label="FOX NEWS"/>
               <New thumbnail={img8} title="Myanmar’s military seizes control of country ov  er..." label="CNN NEWS"/>

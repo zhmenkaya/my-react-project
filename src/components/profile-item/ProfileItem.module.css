@@ -1,0 +1,16 @@
+.itemIcon{
+    margin-right: 24px;
+    vertical-align: middle;
+}
+
+.itemName{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #878787;
+    vertical-align: middle;
+}
+.itemName:hover{
+    font-weight: bold;
+    color:#503E9D;
+}
