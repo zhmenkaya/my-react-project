@@ -37,17 +37,19 @@ import profileIcon7 from './assets/img/profileIcon7.png';
 function App() {
   return (
     <div className="App">
-      <div className="wrapper">
 
-        <header className="header">
+<header className="header">
           <nav className="nav">
             <NavElement navIcon={icon7} navName="San Francisco, California"/>
             <NavElement navIcon={icon8} navName="Analysis"/>
             <NavElement navIcon={icon9} navName="Monthly"/>
           </nav>
           <div className="right-block">
-            <form>
-              <input className="formSearch" type="search" name="q" placeholder="Search for anything…"/>
+            <form className="form">
+              <div className="searchWrap">
+                <input className="formSearch" type="search" name="q" placeholder="Search for anything…"/>
+              </div>
+              
             </form>
             <img className="iconFill" src={icon10} alt=""/>
             <img className="photoAvatar" src={avatar} alt=""/>
@@ -107,10 +109,6 @@ function App() {
 
       </main>
 
-
-
-      
-      </div>
       
     </div>
   );

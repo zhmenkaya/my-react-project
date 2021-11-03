@@ -1,6 +1,4 @@
-.navElement{
-    padding: 40px 0 0 32px;
-}
+.navElement{}
 
 .navIcon{
     margin-right: 12px;
@@ -10,8 +8,21 @@
 .navName{
     font-weight: 600;
     font-size: 14px;
-    line-height: 150%;
+    line-height: 126%;
     color: #182135;
-    /* margin-right: 42px; */
     vertical-align: middle;
+    position: relative;
+    margin-right: 44px;
+}
+.navName::after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 18px;
+    background-image: url(./../../assets/img/upDown.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 2px;
+    right: -19px;
+    
 }
