@@ -1,0 +1,34 @@
+.sectionTitle {
+    display: flex;
+    justify-content: space-between;
+    margin: 38px 0 31px;
+}
+
+.blockTitle {
+}
+
+.btn {
+    color: #503E9D;
+    display: block;
+    width: 70px;
+    height: 24px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 110%;
+    border: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.btn::after {
+    content: "";
+    position: absolute;
+    background-image: url(./../../assets/img/rowRight.svg);
+    background-repeat: no-repeat;
+    top: 7px;
+    right: 0;
+    width: 10px;
+    height: 18px;
+}

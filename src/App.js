@@ -1,5 +1,6 @@
 import './App.css';
 import Headline from './components/headline/Headline';
+import SectionTitle from './components/section-title/SectionTitle';
 import img1 from './assets/img/image1.jpg';
 import img2 from './assets/img/image2.jpg';
 import img3 from './assets/img/image3.jpg';
@@ -32,6 +33,7 @@ import profileIcon4 from './assets/img/profileIcon4.png';
 import profileIcon5 from './assets/img/profileIcon5.png';
 import profileIcon6 from './assets/img/profileIcon6.png';
 import profileIcon7 from './assets/img/profileIcon7.png';
+
 
 
 function App() {
@@ -73,7 +75,8 @@ function App() {
         <main className="main">
 
           <section className="channels">
-            <h2 className="block-title">Explore Channels</h2>
+
+            <SectionTitle title="Explore Channels"/>
             
             <div className="channel-block">
               <Channel thumbnail={icon1} title="FOX NEWS"/>
@@ -87,7 +90,8 @@ function App() {
           </section>
 
           <section className="headlines">
-            <h2 className="block-title">Today’s Headlines</h2>
+          <SectionTitle title="Today’s Headlines"/>
+            
             <div className="block-content">
               <Headline style={{backgroundColor: "lightgreen"}} title="Hate speech vs free speech" thumbnail={img1} label="BBC NEWS"/>
               <Headline title="Ontario Liberal leadership" thumbnail={img2} label="BBC NEWS"/>
@@ -98,8 +102,10 @@ function App() {
             </div>
           </section>
 
-          <section>
-            <h2 className="block-title">Featured News</h2>
+          <section className="newsBlock">
+
+          <SectionTitle title="Featured News"/>
+          
             <div className="block-content">
               <New thumbnail={img7} title="Travellers to pay more than $2K, Trudeau says" label="FOX NEWS"/>
               <New thumbnail={img8} title="Myanmar’s military seizes control of country ov  er..." label="CNN NEWS"/>

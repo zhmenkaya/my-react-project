@@ -24,7 +24,6 @@
 
 .nav{
     display: flex;
-    align-items: baseline;
 }
 
 .right-block{
@@ -52,8 +51,7 @@
 
 .formSearch{
     height: 46px;
-    /* background: #F7F7F7; */
-    background-color:rgb(238, 172, 183);
+    background-color:#F7F7F7;
     border-radius: 10px;
     border: none;
     min-width: 386px;
@@ -99,7 +97,7 @@
 
 .main{
     grid-area: c;
-    padding: 32px;
+    padding: 0 32px;
     border:1px solid rgb(16, 182, 11);
     overflow: hidden;
 }

@@ -5,6 +5,8 @@
 
 .thumbnailImg{
     border-radius: 12px;
+    background-repeat:no-repeat;
+    margin-bottom: 16px;
 }
 
 .title{
@@ -13,7 +15,9 @@
 }
 
 .info{
-    display: flex;
+    display: grid;
+    grid-template-columns: 224px 1fr;
+    grid-gap: 36px;
 }
 
 .wrapper{
