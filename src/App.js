@@ -33,7 +33,7 @@ import profileIcon4 from './assets/img/profileIcon4.png';
 import profileIcon5 from './assets/img/profileIcon5.png';
 import profileIcon6 from './assets/img/profileIcon6.png';
 import profileIcon7 from './assets/img/profileIcon7.png';
-
+import sidebarImg from './assets/img/fire.svg';
 
 
 function App() {
@@ -101,7 +101,18 @@ function App() {
                 </a>
               </li>
             </ul>
-            
+
+          </div>
+
+          <div className="sidebarBottom">
+            <div className="sidebarCard">
+              <img className="sidebarImg" src={sidebarImg} alt="" />
+              <h3 className="sidebarTitle">Subscribe to our
+              new plan <span className="sidebarRedText">$25</span></h3>
+              <p className="sidebarText">It is a limited time offer that will expire soon.</p>
+              <button className="sidebarBtn">Subscribe now</button>
+
+            </div>
           </div>
         </aside>
 
