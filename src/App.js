@@ -26,14 +26,9 @@ import icon10 from './assets/img/iconFill.png';
 import avatar from './assets/img/avatar.png';
 import logo from './assets/img/dailyLogo.png';
 import ProfileItem from './components/profile-item/ProfileItem';
-import profileIcon from './assets/img/profileIcon.png';
-import profileIcon2 from './assets/img/profileIcon2.png';
-import profileIcon3 from './assets/img/profileIcon3.png';
-import profileIcon4 from './assets/img/profileIcon4.png';
-import profileIcon5 from './assets/img/profileIcon5.png';
-import profileIcon6 from './assets/img/profileIcon6.png';
-import profileIcon7 from './assets/img/profileIcon7.png';
+
 import sidebarImg from './assets/img/fire.svg';
+import Icons from './assets/img/profileNav/sprite.svg';
 
 
 function App() {
@@ -65,39 +60,73 @@ function App() {
          
           <div className="profileBlock">
             <ul className="profileList">
+
+              <li className="profilePoint">
+                <a className="profileItemLink"  href="">
+                  <ProfileItem title="Home"
+                                name="icon01" 
+                                viewbox='0 0 24 24' 
+                                width='24' 
+                                height='24'/>
+                </a>
+              </li>
+
               <li className="profilePoint">
                 <a className="profileItemLink">
-                  <ProfileItem itemIcon={profileIcon} itemName="Home"/>
+                  <ProfileItem title="Explore"
+                                name="icon02" 
+                                viewbox='0 0 24 24' 
+                                width='24' 
+                                height='24'/>
                 </a>
               </li>
               <li className="profilePoint">
                 <a className="profileItemLink">
-                  <ProfileItem itemIcon={profileIcon2} itemName="Explore"/>
+                  <ProfileItem title="Saved"
+                                name="icon03" 
+                                viewbox='0 0 24 24' 
+                                width='24' 
+                                height='24'/>
                 </a>
               </li>
               <li className="profilePoint">
                 <a className="profileItemLink">
-                  <ProfileItem itemIcon={profileIcon3} itemName="Saved"/>
+                  <ProfileItem title="Subscriptions"
+                                name="icon04" 
+                                viewbox='0 0 24 24' 
+                                width='24' 
+                                height='24'/>
                 </a>
               </li>
               <li className="profilePoint">
                 <a className="profileItemLink">
-                  <ProfileItem itemIcon={profileIcon4} itemName="Subscriptions"/>
+                  <ProfileItem title="Messages"
+                                name="icon05" 
+                                viewbox='0 0 24 24' 
+                                width='24' 
+                                height='24'
+                                counter= '2' 
+                                style={{display: "flex"}}
+/>
                 </a>
               </li>
               <li className="profilePoint">
                 <a className="profileItemLink">
-                  <ProfileItem itemIcon={profileIcon5} itemName="Messages"/>
+                  <ProfileItem title="Settings"
+                                name="icon06" 
+                                viewbox='0 0 24 24' 
+                                width='24' 
+                                height='24'
+                  />
                 </a>
               </li>
               <li className="profilePoint">
                 <a className="profileItemLink">
-                  <ProfileItem itemIcon={profileIcon6} itemName="Settings"/>
-                </a>
-              </li>
-              <li className="profilePoint">
-                <a className="profileItemLink">
-                  <ProfileItem itemIcon={profileIcon7} itemName="Logout"/>
+                  <ProfileItem title="Logout"
+                                name="icon07" 
+                                viewbox='0 0 24 24' 
+                                width='24' 
+                                height='24'/>
                 </a>
               </li>
             </ul>
