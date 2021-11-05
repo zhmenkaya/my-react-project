@@ -28,7 +28,6 @@ import logo from './assets/img/dailyLogo.png';
 import ProfileItem from './components/profile-item/ProfileItem';
 
 import sidebarImg from './assets/img/fire.svg';
-import Icons from './assets/img/profileNav/sprite.svg';
 
 
 function App() {
@@ -105,7 +104,7 @@ function App() {
                                 viewbox='0 0 24 24' 
                                 width='24' 
                                 height='24'
-                                counter= '2' 
+                                counter= '5' 
                                 style={{display: "flex"}}
 />
                 </a>

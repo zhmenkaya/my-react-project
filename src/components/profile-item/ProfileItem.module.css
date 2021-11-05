@@ -11,7 +11,7 @@
     line-height: 24px;
     color: #878787;
     vertical-align: middle;
-    /* margin-left: 24px; */
+    margin-left: 24px;
 }
 
 .profileItem {
@@ -22,7 +22,7 @@
 }
 
 .profileWrapper {
-    width: 272px;
+    width: 258px;
     height: 56px;
     background-color: transparent;
     border-radius: 12px;
