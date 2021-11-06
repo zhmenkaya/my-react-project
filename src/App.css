@@ -138,6 +138,26 @@
 
 .sidebarBottom{
     margin-top: 50px;
+    position: relative;
+}
+
+.sidebarBottom::before{
+    content:"";
+    display: block;
+    background: #fff;
+    /* background-color: rgb(238, 151, 151); */
+    width: 208px;
+    height: 324px;
+    position: absolute;
+    left: 47px;
+    bottom: -14px;
+    box-shadow: 0px 24px 64px -4px rgba(0, 0, 0, 0.04);
+    border-radius:20px;
+    -webkit-border-radius:20px;
+    -moz-border-radius:20px;
+    -ms-border-radius:20px;
+    -o-border-radius:20px;
+    z-index: 2;
 }
 .sidebarCard {
     max-width: 240px;
@@ -146,29 +166,12 @@
     background: #fff;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items:center;
     box-shadow: 0px 24px 64px -4px rgba(0, 0, 0, 0.04);
     padding-bottom: 32px;
     border-radius: 20px;
-    z-index: 100;
-}
-.sidebarCard::before{
-    content:"";
-    display: block;
-    background: #fff;
-    width: 208px;
-    height: 324px;
-    position: absolute;
-    left: 46px;
-    bottom: 32px;
-    box-shadow: 0px 24px 64px -4px rgba(0, 0, 0, 0.04);
-    border-radius:20px;
-    -webkit-border-radius:20px;
-    -moz-border-radius:20px;
-    -ms-border-radius:20px;
-    -o-border-radius:20px;
-    border:1px solid blue;
-    z-index: -1;
+    position: relative;
+    z-index: 7;
 }
 
 .sidebarBottom::after {
@@ -177,24 +180,25 @@
     position: absolute;
     width: 176px;
     height: 324px;
-    top: 55px;
-    left: 65px;
+    top: 27px;
+    left: 63px;
     background: #fff;
+    /* background-color: rgb(199, 221, 138); */
     box-shadow: 0px 24px 64px -4px rgba(0, 0, 0, 0.04);
     border-radius:20px;
     -webkit-border-radius:20px;
     -moz-border-radius:20px;
     -ms-border-radius:20px;
     -o-border-radius:20px;
-    border:1px solid red;
-    z-index: -2;
+    z-index: 1;
 }
+
 
 
 .sidebarImg {
     width: 64px;
     height: 64px;
-    margin: 32px auto 24px;
+    margin: 32px 0 24px;
     z-index: inherit;
 }
 
@@ -242,7 +246,6 @@
     line-height: 100%;
     color: #F7FAFC;
     position: relative;
-    margin: 0 auto;
     z-index: inherit;
 }
 
