@@ -5,7 +5,7 @@
     width: 1440px;
     display: grid;
     grid-template-columns: 304px 1fr;
-    grid-template-rows: 67px 1fr;
+    grid-template-rows: 82px 1fr;
     grid-template-areas: 
     "s h"
     "s c";
@@ -268,8 +268,11 @@
 }
 
 .channel-block{
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: repeat(6, 152px);
+    gap: 32px;
 }
 
 .block-content{
